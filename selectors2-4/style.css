@@ -1,0 +1,96 @@
+/**  Page Title    */
+.title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/** All Boxes */
+.boxs {
+    display: inline-flex;
+    border: 1px solid black;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+/**   Li Box */
+.boxs-li {
+    display: inline-flex;
+    border: 1px solid black;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+hr {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkgrey;
+    height: 10px;
+}
+
+/*! (#1)    not  */
+.not :not(p) {
+    color: blue;
+}
+
+/*! (#2)     nth-child() */
+.nthChild div:nth-child(2) {
+    background-color: aqua;
+}
+.nthChild li:nth-child(2) {
+    background-color: rgb(65, 5, 230);
+}
+.nthChild :nth-child(3) {
+    background-color: rgb(10, 224, 64);
+}
+
+/*! (#3)      nth-last-child() */
+.nthLastChild p:nth-last-child(2) {
+    background-color: aqua;
+}
+
+/*! (#4)      nth-last-of-type()*/
+.nthLastOfType p:nth-last-of-type(2) {
+    background-color: violet;
+}
+
+/*! (#5)     * Universal Operator */
+.withOp * {
+    margin: 0;
+    padding: 0;
+}
+
+/*! (#6)      */
+.combinator .box p {
+    background-color: aquamarine;
+}
+
+.parent {
+    border: 0.2rem solid black;
+    width: 550px;
+    height: 700px;
+    background-color: aqua;
+}
+.childOfParent {
+    border: 0.2rem solid black;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(43, 62, 187);
+    margin-left: 8rem;
+}
+
+.grandChildOfParent {
+    border: 0.2rem solid black;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(4, 241, 79);
+    margin-left: 5rem;
+}
+
+/* ! (#7) */
+/* . : {
+} */

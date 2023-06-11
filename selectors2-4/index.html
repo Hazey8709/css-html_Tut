@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="NoobieJ" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <title>CSS Selectors #2</title>
+    </head>
+    <body>
+        <h1 class="title">CSS Selectors #2</h1>
+        <!--! (#1)   Not -->
+        <h3>(#1) :not(selector)</h3>
+        <p>(Set a style for all elements that are not a p element.)</p>
+        <section class="not">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                natus iste ex quaerat optio perferendis error fugit eaque
+                cupiditate rerum ea autem odit esse, mollitia accusamus aliquam
+                excepturi omnis nulla!
+            </p>
+
+            <h1>This is a heading</h1>
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+            <div>This is some text in a div element.</div>
+            <a href="https://www.google.com" target="_blank">Link to Google!</a>
+        </section>
+        <hr />
+
+        <!--! (#2)  NTH-Child() -->
+        <h3>(#2) :nth-child()</h3>
+        <p>
+            (The :nth-child(n) selector matches every element that is the nth
+            child of its parent. n can be a number, a keyword (odd or even), or
+            a formula (like an + b).)
+        </p>
+        <secton class="nthChild">
+            <div>
+                <p>This is some text.</p>
+            </div>
+            <div>
+                <p>This is some text.</p>
+            </div>
+            <div>
+                <p>This is some text.</p>
+            </div>
+            <ul>
+                <li>First list item</li>
+                <li>Second list item</li>
+                <li>Third list item</li>
+                <li>Fourth list item</li>
+                <li>Fifth list item</li>
+            </ul>
+        </secton>
+        <hr />
+
+        <!--! (#3)  nth-last-child(n) -->
+        <h3>(#3) :nth-last-child(n)</h3>
+        <p>
+            The :nth-last-child(n) selector matches every element that is the
+            nth child, regardless of type, of its parent, counting from the last
+            child. n can be a number, a keyword, or a formula.
+        </p>
+        <section class="nthLastChild">
+            <p>The first paragraph.(4th from last)</p>
+            <p>The second paragraph.(3rd from last)</p>
+            <p>The third paragraph.(2nd from last)</p>
+            <p>The fourth paragraph.(1st from last)</p>
+        </section>
+        <hr />
+
+        <!--! (#4)  :nth-last-of-type(n)-->
+        <h3>(#4) :nth-last-of-type(n)</h3>
+        <p>
+            Selects every P element that is the second P element of its parent,
+            counting from the last child
+        </p>
+        <section class="nthLastOfType">
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+        </section>
+        <hr />
+
+        <!--! (#5)  * Universal Selector-->
+        <h3>(#5) *</h3>
+        <p>
+            (* will apply to all elements on page Often seen as
+            <code>* { margin: 0: padding: 0: }.)</code>
+        </p>
+        <p>With/Out * Operator</p>
+        <section>
+            <ul>
+                <li><a href="#" target="_blank">Link</a></li>
+            </ul>
+        </section>
+        <p>With * Operator</p>
+        <section class="withOp">
+            <ul>
+                <li><a href="#" target="_blank">Link</a></li>
+            </ul>
+        </section>
+        <hr />
+
+        <!--! (#6)  Descendant Combinator-->
+        <h3>(#6) Descendant Combinator (.box p {})</h3>
+        <p>Will choose P(paragraph) inside class element .box(div)</p>
+        <section class="combinator">
+            <div class="box">
+                <p>
+                    Paragraph is child of .box(div) & .box(div) is child of
+                    section (aka: GrandChild of parent).
+                </p>
+            </div>
+            <p>Paragraph is child of section(child of parent)</p>
+            <p>Paragraph is child of section(child of parent)</p>
+        </section>
+        <hr />
+
+        <h3>Example</h3>
+
+        <div class="parent">
+            Parent (section).
+            <div class="childOfParent">
+                Child of Parent (div).
+                <p class="grandChildOfParent">Grand Child Of Parent (p).</p>
+            </div>
+            <p class="childOfParent">Child of Parent (p).</p>
+            <p class="childOfParent">Child of Parent (p).</p>
+        </div>
+
+        <script src="../selectors2-4/notes.js"></script>
+    </body>
+</html>
