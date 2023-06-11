@@ -1,0 +1,116 @@
+/**  Page Title    */
+h1 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/** All Boxes */
+.boxs {
+    display: inline-flex;
+    border: 1px solid black;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+
+/**   Li Box */
+.boxs-li {
+    display: inline-flex;
+    border: 1px solid black;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+hr {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: darkgrey;
+    height: 10px;
+}
+
+/*? (#1)    First Div Child */
+.firstChild :first-child {
+    background-color: aqua;
+}
+
+/*! (#1-1)     First Div #2 Child List */
+.firstChild-2 li:first-child {
+    background-color: aqua;
+}
+
+/*? (#2)     First Letter */
+.firstLetter p:first-letter {
+    background-color: aqua;
+    font-size: 30px;
+}
+
+/*! (#3)     First Line */
+.firstLine p:first-line {
+    background-color: aqua;
+}
+
+/*? (#4)     First Of Type */
+.firstOfType p:first-of-type {
+    background-color: aqua;
+}
+
+/*! (#5)    Focus */
+.focus input:focus {
+    background-color: yellow;
+}
+
+/*? (#6)    Last Child */
+.lastChild :last-child {
+    background-color: aqua;
+}
+
+/*! (#7)     last Of Type */
+.lastOfType p:last-of-type {
+    background-color: aqua;
+}
+
+/*? (#8)     Only Child */
+.onlyChild :only-child {
+    background-color: aqua;
+}
+
+/*! (#9)     Only Of Type */
+.onlyOfType li:only-of-type {
+    background-color: aqua;
+}
+
+/*? (#10)    Hover */
+.hover p:hover {
+    background-color: aqua;
+}
+.hover a:hover {
+    background-color: aqua;
+}
+.hover button:hover {
+    background-color: aqua;
+}
+
+/*! (#11)      Marker */
+.marker ::marker {
+    color: red;
+}
+
+/*? (#)      */
+. : {
+}
+
+/*! (#)      */
+. : {
+}
+
+/*? (#)      */
+. : {
+}
+
+/*! (#)      */
+. : {
+}

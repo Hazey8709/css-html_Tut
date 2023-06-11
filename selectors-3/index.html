@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="NoobieJ" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <title>CSS Selectors</title>
+    </head>
+    <body>
+        <h1>Structural Pseudo-Classes (Selectors)</h1>
+
+        <!--! First-Child -->
+        <h3>(#1) :first-child</h3>
+        <p>(Selects the first child, regardless of type.)</p>
+        <section class="firstChild">
+            <div class="boxs">Div</div>
+            <div class="boxs">Div</div>
+            <div class="boxs">Div</div>
+            <div class="boxs">Div</div>
+            <p class="boxs">P</p>
+        </section>
+
+        <!--! First-Child #2  (List) -->
+        <p>(Select first-Child in a list)</p>
+        <section class="firstChild-2">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ol>
+        </section>
+        <hr />
+
+        <!--! First Letter -->
+        <h3>(#2) :first-letter</h3>
+        <p>(Selects the first letter of P Element.)</p>
+        <section class="firstLetter">
+            <h4>H4 Element.</h4>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id
+                fugit provident ducimus libero, ex omnis itaque enim quas
+                maiores odit asperiores facere optio alias dolores esse aut?
+                Reprehenderit, illum voluptatibus.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi impedit provident hic odit, aliquid minus culpa
+                maiores eaque, commodi minima deserunt, distinctio deleniti
+                dolorem. Deleniti pariatur fuga voluptatibus? A, atque.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur dolores magni quibusdam asperiores ab explicabo
+                voluptas voluptates doloribus iure necessitatibus laborum
+                praesentium voluptatum culpa, facere, labore quaerat doloremque
+                voluptate obcaecati.
+            </p>
+        </section>
+        <hr />
+
+        <!--! First-Line -->
+        <h3>(#3) :first-line</h3>
+        <p>(Selects the first line of the P elements.)</p>
+        <section class="firstLine">
+            <h4>H4 element.</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, id quam! Harum voluptatem adipisci consectetur, tempore
+                iusto dolores dignissimos, quam obcaecati officiis voluptatibus
+                perferendis. Eius accusantium totam tempora eaque porro!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+                eum temporibus vitae itaque, et perferendis alias natus, nostrum
+                maxime non odit quidem fuga sapiente tempore aut hic asperiores
+                ducimus illum?
+            </p>
+        </section>
+        <hr />
+
+        <!--! First-Of-Type -->
+        <h3>(#4) :first-of-type</h3>
+        <p>(Selects the first of a specific type of element.)</p>
+        <section class="firstOfType">
+            <h4 class="boxs">H4</h4>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <ul class="boxs">
+                UL
+                <li class="boxs-li">LI</li>
+            </ul>
+        </section>
+        <hr />
+
+        <h3>(#5) :focus</h3>
+        <p>(Selects ands style input field when in focus.)</p>
+        <section class="focus">
+            <form>
+                First name: <input type="text" name="firstname" /><br />
+                Last name: <input type="text" name="lastname" />
+            </form>
+        </section>
+        <hr />
+
+        <!--! Last Child -->
+        <h3>(#6) :last-child</h3>
+        <p>(Selects last child, regardless of type.)</p>
+        <section class="lastChild">
+            <h4 class="boxs">H4</h4>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <ul class="boxs">
+                UL
+                <li class="boxs-li">LI</li>
+            </ul>
+        </section>
+        <hr />
+
+        <!--! Last-Of-Type -->
+        <h3>(#7) :last-of-type</h3>
+        <p>(Selects the last of a specific type of element.)</p>
+        <section class="lastOfType">
+            <h4 class="boxs">H4</h4>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <ul class="boxs">
+                UL
+                <li class="boxs-li">LI</li>
+            </ul>
+            <p class="boxs">P</p>
+        </section>
+        <hr />
+
+        <!--! Only-Child -->
+        <h3>(#8) :only-child</h3>
+        <p>
+            (Selects an element if it is the sole child and has no other
+            siblings.)
+        </p>
+        <section class="onlyChild">
+            <h4 class="boxs">H4</h4>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <ul class="boxs">
+                UL
+                <li class="boxs-li">LI</li>
+            </ul>
+            <p class="boxs">P</p>
+        </section>
+        <hr />
+
+        <!--! Only-Of-Type -->
+        <h3>(#9) :only-of-type</h3>
+        <p>
+            (Selects a specific type of element if it is the sole child and has
+            no other siblings.)
+        </p>
+
+        <section class="onlyOfType">
+            <h4 class="boxs">H4</h4>
+            <p class="boxs">P</p>
+            <p class="boxs">P</p>
+            <ul class="boxs">
+                UL
+                <li class="boxs-li">LI</li>
+            </ul>
+            <p class="boxs">P</p>
+        </section>
+        <hr />
+
+        <!--!  Hover-->
+        <h3>(#10) :hover</h3>
+        <p>(Change style of element or link by hovering over with mouse.)</p>
+        <section class="hover">
+            <a href="www.google.com" target="_blank">Google-Link</a>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                quaerat consequatur possimus saepe, necessitatibus culpa facilis
+                odio, ratione repellendus provident aliquam blanditiis
+                aspernatur, deleniti repellat dolore. Omnis vitae ut ad.
+            </p>
+            <button>Btn</button>
+            <button>Btn</button>
+            <button>Btn</button>
+        </section>
+        <hr />
+
+        <!--!  -->
+        <h3>(#11) ::marker</h3>
+        <p>(Style markers of List items.)</p>
+        <secton class="marker">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <ol>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ol>
+        </secton>
+        <hr />
+
+        <script src="../selectors-3/notes.js"></script>
+    </body>
+</html>
