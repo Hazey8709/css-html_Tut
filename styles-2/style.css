@@ -1,0 +1,17 @@
+p {
+    border-top: solid;
+    border-right: dotted;
+    border-bottom: outset;
+    border-left: inset;
+    border-radius: 0.5rem;
+
+
+
+    border-top-color: aquamarine;
+    border-right-color: rgb(125, 128, 127);
+    border-bottom-color: rgb(61, 46, 196);
+
+    border: 0.3rem solid red;
+
+    border-width: 0.3rem;
+}
