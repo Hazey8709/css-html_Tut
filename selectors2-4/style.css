@@ -41,11 +41,11 @@ hr {
 .nthChild div:nth-child(2) {
     background-color: aqua;
 }
-.nthChild li:nth-child(2) {
-    background-color: rgb(65, 5, 230);
-}
 .nthChild :nth-child(3) {
     background-color: rgb(10, 224, 64);
+}
+.nthChild li:nth-child(2) {
+    background-color: rgb(65, 5, 230);
 }
 
 /*! (#3)      nth-last-child() */
@@ -54,7 +54,7 @@ hr {
 }
 
 /*! (#4)      nth-last-of-type()*/
-.nthLastOfType p:nth-last-of-type(2) {
+.nthLastOfType p:nth-last-of-type(1) {
     background-color: violet;
 }
 
