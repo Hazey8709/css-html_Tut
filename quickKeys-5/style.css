@@ -1,0 +1,19 @@
+body {
+    background-color: aliceblue;
+}
+
+/**   Title    */
+.title {
+    text-align: center;
+    background-color: #0005;
+    border-radius: 0.5rem;
+    padding: 0.1rem;
+}
+
+.catTitles {
+    text-align: center;
+    text-decoration: underline;
+    background-color: #0005;
+    border-radius: 0.3rem;
+    padding: 0.1rem;
+}
