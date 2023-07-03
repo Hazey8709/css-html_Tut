@@ -17,18 +17,28 @@
 
         <!--!  #1   -->
         <h3>1: #header</h3>
+        <div id="header"></div>
+        <div id="page"></div>
+        <div id="pEl"></div>
 
         <p>< div id="header">< /div></p>
-        <hr />∂
+        <hr />
 
         <!--!  #2   -->
         <h3>2: .title</h3>
+        <div class="title"></div>
+        <div class="className"></div>
+        <div class="BTN"></div>
 
         <p>< div class="title">< /div></p>
         <hr />
 
         <!--!  #3   -->
         <h3>3: p.class1.class2.class3</h3>
+        <p class="class1 class2 class3"></p>
+        <h1 class="class1"></h1>
+        <h1 class="class1 class2 class3"></h1>
+        <h2 class="cont cont2 cont3"></h2>
 
         <p>< p class="class1 class2 class3">< /p></p>
         <hr />
@@ -40,8 +50,26 @@
         <h3>
             4: ul>li*5 <br />
             - OR - <br />
-            ul>li{listItem}*5
+            ul>li{red}*5 <br />
+            ul>li{listItems}*5 <br />
+            ul>li{1}*5 <br />
         </h3>
+
+        <ul>
+            <li>listItems</li>
+            <li>listItems</li>
+            <li>listItems</li>
+            <li>listItems</li>
+            <li>listItems</li>
+        </ul>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
 
         <pre>
             < ul>
@@ -59,6 +87,13 @@
 
         <!--! #5  -->
         <h3>5: ul>li.sample$*5</h3>
+        <ul>
+            <li class="sample1"></li>
+            <li class="sample2"></li>
+            <li class="sample3"></li>
+            <li class="sample4"></li>
+            <li class="sample5"></li>
+        </ul>
 
         <pre>
             < ul>
@@ -73,6 +108,11 @@
 
         <!--! #6  -->
         <h3>6: h$[title=topic$]{Headline $}*3</h3>
+
+        <h1 title="topic1">Headline 1</h1>
+        <h2 title="topic2">Headline 2</h2>
+        <h3 title="topic3">Headline 3</h3>
+        <h4 title="topic4">Headline 4</h4>
 
         <pre>
             < h1 title="topic1">Headline 1< /h1>
@@ -97,6 +137,13 @@
 
         <!--! #8  -->
         <h3>8: ul>li.item$@-*5</h3>
+        <ul>
+            <li class="item5"></li>
+            <li class="item4"></li>
+            <li class="item3"></li>
+            <li class="item2"></li>
+            <li class="item1"></li>
+        </ul>
 
         <pre>
             < ul>
@@ -112,6 +159,14 @@
         <!--! #9  -->
         <h3>9: ul>li.item$@3*5</h3>
 
+        <ul>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+            <li class="item6"></li>
+            <li class="item7"></li>
+        </ul>
+
         <pre>
             < ul>
                 < li class="item3">< /li>
@@ -126,7 +181,16 @@
 
         <h2 class="catTitles">Custom Attributes</h2>
         <!--! #10  -->
-        <h3>10: p[title="Hello World"]</h3>
+        <h3>
+            10: p[title="Hello World"] OR <br />
+            p[title="hello World"]{para$}*5
+        </h3>
+        <p title="hello World"></p>
+        <p title="hello World">para1</p>
+        <p title="hello World">para2</p>
+        <p title="hello World">para3</p>
+        <p title="hello World">para4</p>
+        <p title="hello World">para5</p>
 
         <pre>
             < p title="Hello World">< /p>
@@ -137,6 +201,8 @@
         <h2 class="catTitles">Text{}:</h2>
         <!--! #11  -->
         <h3>11: a{Click Me}</h3>
+        <a href="">Click Me</a> <br />
+        <a href="">GitHub</a>
 
         <pre>
             < a href="">Click Me< /a>
@@ -154,6 +220,7 @@
         <h2 class="catTitles">HTML:</h2>
         <!--! #13  -->
         <h3>13: a</h3>
+        <a href=""></a>
 
         <pre>
             < a href="">< /a>
@@ -162,6 +229,7 @@
 
         <!--! #14  -->
         <h3>14: a:link</h3>
+        <a href="http://"></a>
 
         <pre>
             < a href="http://">< /a>
@@ -170,6 +238,7 @@
 
         <!--! #15  -->
         <h3>15: a:mail</h3>
+        <a href="mailto:"></a>
 
         <pre>
             < a href="mailto:">< /a>
@@ -178,6 +247,7 @@
 
         <!--! #16  -->
         <h3>16: link</h3>
+        <link rel="stylesheet" href="">
 
         <pre>
             < link rel="stylesheet" href="">
@@ -186,6 +256,7 @@
 
         <!--! #17  -->
         <h3>17: link:css</h3>
+        <link rel="stylesheet" href="style.css">
 
         <pre>
             < link rel="stylesheet" href="style.css">
@@ -194,6 +265,7 @@
 
         <!--! #18  -->
         <h3>18: meta:utf (Meta-UTF Code)</h3>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
         <pre>
             < meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -202,6 +274,7 @@
 
         <!--! #19  -->
         <h3>19: meta:vp (Meta-Viewport)</h3>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <pre>
             < meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -210,6 +283,7 @@
 
         <!--! #20  -->
         <h3>20: meta:compat</h3>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
 
         <pre>
             < meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -221,8 +295,6 @@
             CheatSheet with all Attributes & CSS Quick-Keys Included. Link is
             below in description to code and Quick keys.
         </p>
-
-        ol+
 
     </body>
 </html>
