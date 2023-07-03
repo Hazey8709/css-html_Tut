@@ -10,3 +10,8 @@
 //* link:css,  meta:utf (Meta-UTF Code), meta:vp (Meta-Viewport), meta:compat
 
 //* rest is in File on Github.
+
+//! Links
+//
+//* Code: https://github.com/Hazey8709/css-html_Tut/tree/main/quickKeys-5
+//* CheatSheet Of Quick-Keys: https://github.com/Hazey8709/CheatSheet/blob/main/HTML/html-css-cheatSheet.pdf
