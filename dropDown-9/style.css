@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-family: cursive;
+}
+
+.dropMenu {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.dropMenu button {
+    border-radius: 0.3rem;
+    background-color: aqua;
+    color: blue;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropMenu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropMenu .dropContent {
+    display: none;
+    border-radius: 0.3rem;
+    position: absolute;
+    background-color: white;
+    min-width: 64px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dropMenu:hover .dropContent {
+    display: block;
+}
+
+.dropMenu:hover button {
+    background-color: black;
+    color: white;
+}
+
+.dropMenu a:hover {
+    background-color: #0005;
+}
