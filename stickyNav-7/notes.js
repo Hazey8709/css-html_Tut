@@ -7,8 +7,8 @@
 
 //!     -----        JavaScript       -------
 
-var navbar = document.getElementById("navbar");
-var menu = document.getElementById("menu");
+const navbar = document.getElementById("navbar");
+const menu = document.getElementById("menu");
 
 window.onscroll = function () {
     if (window.pageYOffset >= menu.offsetTop) {

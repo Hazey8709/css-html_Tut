@@ -1,4 +1,4 @@
-//!        Notes
+å//!        Notes
 
 //* We build a simple responsive website entry page using only html and css.
 //* It could also be a landing page or modified for something similar.
