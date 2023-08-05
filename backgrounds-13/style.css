@@ -1,9 +1,27 @@
-body {
-}
-
+/** H1 example */
 h1 {
     text-align: center;
+    /* background: linear-gradient(to right, lightblue, darkblue); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
 }
 
-p {
+/** body example */
+body {
+    background: linear-gradient(lightblue, darkblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* background-image: url(./images/menuPic-1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
+
+/**     Paragraph  example */
+/* p {
+    background: linear-gradient(to left, lightblue, darkblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
