@@ -1,0 +1,71 @@
+h1 {
+    text-align: center;
+    font-size: 82px;
+}
+
+#box1 {
+    border: 0.1rem solid black;
+    width: 250px;
+    height: 250px;
+    font-size: 225px;
+    text-align: center;
+    background-color: aquamarine;
+
+    /*st   Translate X, Y */
+    /** Moves Right  (x axis) */
+    /* transform: translateX(50px); */
+
+    /**  Up / Down   (Y axis) */
+    /* transform: translateY(50px); */
+
+    /** Short Hand (X, Y) */
+    /* transform: translate(50px, 50px); */
+
+    /*st   Rotate  X, Y, Z */
+    /** Flip down / Flip Up         (X axis) */
+    /* transform: rotateX(180deg); */
+
+    /** Flip Left / Flip Right      (Y axis)  */
+    /* transform: rotateY(180deg); */
+
+    /** Rotate Left / Rotate Right  (X axis) */
+    /* transform: rotateZ(180deg); */
+
+    /*st   Scale  X, Y, Z */
+    /**  Default size*/
+    /* transform: scaleX(1); */
+
+    /**  +200% size  Scales Width Left-Right (X axis) */
+    /* transform: scaleX(2); */
+
+    /**  +300% size  Scales Width Left-Right (X axis) */
+    /* transform: scaleX(3); */
+
+    /**   +200% size Scales Height Up-Down   (Y axis) */
+    /* transform: scaleY(2); */
+
+    /** Shorthand Scale (X, Y)*/
+    /* transform: scale(2, 3); */
+
+    /*st    Size Scale  */
+    /** (1= Default, 2= 200%, 3= 300%) */
+
+    /*st   Skew         (X, Y) */
+    /**  Skew            (X axis) */
+    /* transform: skewX(45deg); */
+
+    /** Skew             (Y axis) */
+    /* transform: skewY(45deg); */
+
+    /** Skew ShortHand    (X, Y) */
+    /* transform: skew(45deg, 50deg); */
+
+    /*st      Matrix           (6-Digits)*/
+
+    /** scaleX()   Min 1  */
+    /** skewY()           */
+    /** skewX()           */
+    /** scaleY()   Min 1  */
+    /** translateX()      */
+    /** translateY()      */
+}

@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+.space {
+    border: 0.2rem solid black;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/*T                             */
+
+img {
+    border: 0.2rem solid black;
+    float: right;
+    background-color: yellow;
+}
+
+/**      All Boxes */
+.box {
+    border: 0.3rem solid black;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 32px;
+
+    /* float: left; */
+    float: right;
+}
+
+
+/** To Clear Float on Element  */
+p {
+    /* clear: left; */
+    /* clear: right; */
+}

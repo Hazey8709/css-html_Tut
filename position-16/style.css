@@ -1,0 +1,41 @@
+#box1 {
+    border: 0.1rem solid black;
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+
+    /** Box 1 & 2 move together */
+    /* left: 3rem; */
+
+    /** default */
+    /* position: static; */
+
+    /** Absolute */
+    /* position: absolute; */
+
+    /** Fixed */
+    position: fixed;
+
+    /** relative */
+    /* position: relative; */
+
+    /** Sticky */
+    /* position: sticky; */
+
+    /* top: 50px; */
+    /* left: 50px; */
+}
+
+#box2 {
+    border: 0.1rem solid black;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    /** Absolute */
+    position: absolute;
+
+    /* top: 0px; */
+    top: 100px;
+    left: 100px;
+}
