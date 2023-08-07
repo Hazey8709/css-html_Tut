@@ -1,12 +1,12 @@
 /* first digit:  Position x axis - Left/ + Right */
-/* Second digit:  Y axis  + Up/ - Down*/
+/* Second digit:  Y axis  - Up/ + Down*/
 /* Third digit:   Blur amount*/
 
 /**   Text Shadow  */
 h1 {
     text-align: center;
     font-size: 82px;
-    text-shadow: 1px 1px 50px yellow;
+    text-shadow: 0px 0px 10px blue;
 }
 
 /**   Box Shadow  */
@@ -17,5 +17,5 @@ body {
     margin: 0 auto;
     margin-top: 3rem;
     font-size: 82px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 1px 1px 10px black;
 }

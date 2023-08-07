@@ -28,8 +28,8 @@ h1 {
     /** Flip Left / Flip Right      (Y axis)  */
     /* transform: rotateY(180deg); */
 
-    /** Rotate Left / Rotate Right  (X axis) */
-    /* transform: rotateZ(180deg); */
+    /** Rotate Left / Rotate Right  (Z axis) */
+    /* transform: rotateZ(-45deg); */
 
     /*st   Scale  X, Y, Z */
     /**  Default size*/
@@ -45,7 +45,7 @@ h1 {
     /* transform: scaleY(2); */
 
     /** Shorthand Scale (X, Y)*/
-    /* transform: scale(2, 3); */
+    /* transform: scale(2, 1); */
 
     /*st    Size Scale  */
     /** (1= Default, 2= 200%, 3= 300%) */
@@ -58,7 +58,7 @@ h1 {
     /* transform: skewY(45deg); */
 
     /** Skew ShortHand    (X, Y) */
-    /* transform: skew(45deg, 50deg); */
+    /* transform: skew(-40deg, -20deg); */
 
     /*st      Matrix           (6-Digits)*/
 
@@ -68,4 +68,6 @@ h1 {
     /** scaleY()   Min 1  */
     /** translateX()      */
     /** translateY()      */
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }

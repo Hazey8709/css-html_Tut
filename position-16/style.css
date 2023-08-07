@@ -1,11 +1,16 @@
+h1 {
+    text-align: center;
+}
+
 #box1 {
     border: 0.1rem solid black;
     height: 300px;
     width: 300px;
+    font-size: 42px;
     background-color: blueviolet;
 
     /** Box 1 & 2 move together */
-    /* left: 3rem; */
+    margin-left: 10rem;
 
     /** default */
     /* position: static; */
@@ -14,7 +19,7 @@
     /* position: absolute; */
 
     /** Fixed */
-    position: fixed;
+    /* position: fixed; */
 
     /** relative */
     /* position: relative; */
@@ -22,20 +27,22 @@
     /** Sticky */
     /* position: sticky; */
 
-    /* top: 50px; */
+    /* top: 100px; */
     /* left: 50px; */
 }
 
 #box2 {
     border: 0.1rem solid black;
+    font-size: 42px;
     height: 100px;
     width: 100px;
     background-color: blue;
 
     /** Absolute */
-    position: absolute;
+    position: relative;
+    /* position: fixed; */
 
     /* top: 0px; */
-    top: 100px;
+    top: 50px;
     left: 100px;
 }

@@ -15,6 +15,7 @@ img {
     border: 0.2rem solid black;
     float: right;
     background-color: yellow;
+    /* clear: left; */
 }
 
 /**      All Boxes */
@@ -26,10 +27,9 @@ img {
     text-align: center;
     font-size: 32px;
 
-    /* float: left; */
-    float: right;
+    float: left;
+    /* float: right; */
 }
-
 
 /** To Clear Float on Element  */
 p {
